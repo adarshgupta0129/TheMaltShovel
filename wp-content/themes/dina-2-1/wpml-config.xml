@@ -1,0 +1,29 @@
+<wpml-config>
+  <custom-types>
+    <custom-type translate="1">mt_home</custom-type>
+	<custom-type translate="1">mt_menu</custom-type>
+	<custom-type translate="1">mt_gallery</custom-type>
+	<custom-type translate="1">mt_team</custom-type>
+  </custom-types>
+  <taxonomies>
+    <taxonomy translate="1">menu_category</taxonomy>
+  </taxonomies>
+  <custom-fields>
+    <custom-field action="translate">mt_menu_item_desc</custom-field>
+	<custom-field action="copy">mt_menu_item_price</custom-field>
+	<custom-field action="translate">mt_gallery_subtitle</custom-field>
+	<custom-field action="copy">mt_gallery_images</custom-field>
+	<custom-field action="copy">mt_gallery_template</custom-field>
+	<custom-field action="translate">mt_page_title</custom-field>
+	<custom-field action="translate">mt_page_subtitle</custom-field>
+  </custom-fields>
+  <admin-texts>
+    <key name="theme_mods_dina">
+      <key name="mt_top_page_left_txt"/>
+	  <key name="mt_top_page_right_txt"/>
+	  <key name="mt_header2_menu_right"/>
+	  <key name="mt_footer_copy"/>
+	  <key name="mt_slide_text"/>
+     </key>
+  </admin-texts>
+</wpml-config>
