@@ -1,51 +1,35 @@
-<?php $mt_gallery_images = get_field('mt_gallery_images');
+<?php $mt_gallery_images = get_field('upload_event_details');
 
-	if(!empty($mt_gallery_images)):
-	
- ?>
- 
-<section class="gallery-container">
+?>
 
-<div class="container">
-<div class="row">
-<div class="col-md-12">
+<section class="gallery-3colgrid-content">
+	<div class="menu-holder menu-3col-grid-image gallery-holder-fs clearfix">
 
-<div class="gallery-3colgrid-content">
-<div class="menu-holder menu-3col-grid-image gallery-holder clearfix">
- 
+		<?php foreach ( $mt_gallery_images as $piece ):	?>
 
-<?php foreach ( $mt_gallery_images as $piece ):	?>
-    
-<div class="menu-post gallery-post">
- 
-<a href="<?php echo esc_url($piece['url']); ?>" class="lightbox" title="<?php echo esc_html($piece['caption']); ?>">
+		<div class="menu-post gallery-post">
 
-<div class="item-content-bkg gallery-bkg">
+			<!-- 			<a href="<?php echo esc_url($piece['upload_event_image']); ?>" class="lightbox" title="<?php echo esc_html($piece['enter_event_name']); ?>"> -->
 
-<div class="gallery-img" style="background-image:url('<?php if(!empty($piece['url'])) echo esc_url($piece['url']); ?>');"></div>
+			<div class="item-content-bkg gallery-bkg">
 
-<div class="menu-post-desc">
+				<div class="gallery-img" style="background-image:url('<?php if(!empty($piece['upload_event_image'])) echo esc_url($piece['upload_event_image']); ?>');"  >
 
-<h4><?php echo esc_html($piece['caption']); ?></h4>
-<div class="gallery-mglass"><i class="fa fa-search"></i></div>
-</div>
+				</div>
 
-</div>
+				<div class="menu-post-desc">
 
-</a>
+					<a href="<?php echo esc_url($piece['upload_event_image']); ?>">	<h4> <?php echo esc_html($piece['enter_event_name']); ?> </h4> </a>
 
-</div>
+					<!-- <div class="gallery-mglass"> -->
+					<i class="fa fa-arrow-down" title="Download" onclick= window.open("<?php echo esc_url($piece['upload_event_menu']);?>", "_blank" ) style="cursor: pointer;color: white;font-size: 19px;font-weight: 900;line-height: 3;" > Download menu</i>																 	</div>
 
-<?php endforeach; ?>
+			</div>
 
 
-</div>
-</div><!--gallery-3colgrid-content-->
+		</div>
 
+		<?php endforeach; ?>
 
-</div><!--col-md-12-->
-</div><!--row-->
-</div><!--container-->
-</section>
-
-<?php endif; ?>
+	</div>
+</section><!--gallery-3colgrid-content-->

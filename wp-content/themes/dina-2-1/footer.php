@@ -1,13 +1,13 @@
 <footer>
    <div class="container">
       <?php $mt_footer_logo = get_theme_mod( 'mt_footer_logo');
-         if (!empty($mt_footer_logo)):
-         
-         ?>
+      if (!empty($mt_footer_logo)):
+
+      ?>
       <div class="footer-logo">
          <img class="img-responsive" src="<?php echo esc_url($mt_footer_logo); ?>" alt="<?php esc_html_e('Footer Image','dina'); ?>"/>
       </div>
-      <?php endif; ?>			
+      <?php endif; ?>
       <?php if ( is_active_sidebar( 'footer-one' ) || is_active_sidebar( 'footer-two' ) || is_active_sidebar( 'footer-three' ) ): ?>
       <div class="footer-widgets">
          <div class="row">
@@ -37,18 +37,18 @@
       </div>
       <?php endif; ?>
       <?php
-         $mt_social_facebook_url = get_theme_mod( 'mt_social_facebook_url');
-         $mt_social_twitter_url = get_theme_mod( 'mt_social_twitter_url');
-         $mt_social_gplus_url = get_theme_mod( 'mt_social_gplus_url');
-         $mt_social_linkedin_url = get_theme_mod( 'mt_social_linkedin_url');
-         $mt_social_pinterest_url = get_theme_mod( 'mt_social_pinterest_url');  
-         $mt_social_youtube_url = get_theme_mod( 'mt_social_youtube_url'); 
-         $mt_social_vimeo_url = get_theme_mod( 'mt_social_vimeo_url');
-         $mt_social_instagram_url = get_theme_mod( 'mt_social_instagram_url');
-         $mt_social_dribbble_url = get_theme_mod( 'mt_social_dribbble_url');  
-         $mt_social_skype_url = get_theme_mod( 'mt_social_skype_url');   
-         $mt_social_trip_url = get_theme_mod( 'mt_social_trip_url'); 
-         ?>
+      $mt_social_facebook_url = get_theme_mod( 'mt_social_facebook_url');
+      $mt_social_twitter_url = get_theme_mod( 'mt_social_twitter_url');
+      $mt_social_gplus_url = get_theme_mod( 'mt_social_gplus_url');
+      $mt_social_linkedin_url = get_theme_mod( 'mt_social_linkedin_url');
+      $mt_social_pinterest_url = get_theme_mod( 'mt_social_pinterest_url');
+      $mt_social_youtube_url = get_theme_mod( 'mt_social_youtube_url');
+      $mt_social_vimeo_url = get_theme_mod( 'mt_social_vimeo_url');
+      $mt_social_instagram_url = get_theme_mod( 'mt_social_instagram_url');
+      $mt_social_dribbble_url = get_theme_mod( 'mt_social_dribbble_url');
+      $mt_social_skype_url = get_theme_mod( 'mt_social_skype_url');
+      $mt_social_trip_url = get_theme_mod( 'mt_social_trip_url');
+      ?>
       <ul class="footer-social">
          <?php if (!empty($mt_social_facebook_url) ): ?>
          <li><a class="social-facebook" href="<?php echo esc_url($mt_social_facebook_url);?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -84,10 +84,10 @@
          <li><a class="social-skype" href="<?php echo dina_callback_filters($mt_social_skype_url);?>" target="_blank"><i class="fa fa-skype"></i></a></li>
          <?php endif; ?>
       </ul>
-      <?php $mt_footer_copy = get_theme_mod( 'mt_footer_copy'); 
-         if (!empty($mt_footer_copy)):
-         
-         ?>    
+      <?php $mt_footer_copy = get_theme_mod( 'mt_footer_copy');
+      if (!empty($mt_footer_copy)):
+
+      ?>
       <div class="copyright">
          <?php echo dina_callback_filters( $mt_footer_copy ); ?>
       </div>
@@ -102,19 +102,19 @@
 </section>
 <?php endif; ?>
 <?php
-   $mt_scroll_top = get_theme_mod( 'mt_scroll_top', '0');
-   
-   if($mt_scroll_top == '1'):
-   
-   ?>
+$mt_scroll_top = get_theme_mod( 'mt_scroll_top', '0');
+
+if($mt_scroll_top == '1'):
+
+?>
 <div class="scrollup">
    <a class="scrolltop" href="#">
-   <i class="fa fa-chevron-up"></i>
+      <i class="fa fa-chevron-up"></i>
    </a>
 </div>
 <?php
-   endif;
-   ?>
+endif;
+?>
 <?php wp_footer(); ?>
 </body>
 </html>

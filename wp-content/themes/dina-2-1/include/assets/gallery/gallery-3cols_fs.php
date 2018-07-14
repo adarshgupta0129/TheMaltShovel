@@ -1,5 +1,7 @@
-<?php $mt_gallery_images = get_field('mt_gallery_images');
+<?php $mt_gallery_images = get_field('upload_image_menu');
 
+print_r($mt_gallery_images);
+exit;
 	if(!empty($mt_gallery_images)):
 		
  ?>
@@ -11,15 +13,15 @@
     
 <div class="menu-post gallery-post">
  
-<a href="<?php echo esc_url($piece['url']); ?>" class="lightbox" title="<?php echo esc_html($piece['caption']); ?>">
+<a href="<?php echo esc_url($piece['upload_event_image']); ?>" class="lightbox" title="<?php echo esc_html($piece['enter_event_name']); ?>">
 
 <div class="item-content-bkg gallery-bkg">
 
-<div class="gallery-img" style="background-image:url('<?php if(!empty($piece['url'])) echo esc_url($piece['url']); ?>');"></div>
+<div class="gallery-img" style="background-image:url('<?php if(!empty($piece['upload_event_image'])) echo esc_url($piece['upload_event_image']); ?>');"></div>
 
 <div class="menu-post-desc">
 
-<h4><?php echo esc_html($piece['caption']); ?></h4>
+<h4><?php echo esc_html($piece['enter_event_name']); ?></h4>
 <div class="gallery-mglass"><i class="fa fa-search"></i></div>
 </div>
 
