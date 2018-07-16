@@ -55,7 +55,7 @@ $mt_page_top_imgh = get_post_meta($post->ID, "mt_page_top_imgh", true);
                 </div>
 
 
-
+ 
 
             </div>
             <?php  endwhile;
@@ -69,7 +69,8 @@ $mt_page_top_imgh = get_post_meta($post->ID, "mt_page_top_imgh", true);
         </div><!--col-md-10-->
 
     </div><!--row-->
-  </section>
+    </div><!--container-->
+</section>
 
 
 

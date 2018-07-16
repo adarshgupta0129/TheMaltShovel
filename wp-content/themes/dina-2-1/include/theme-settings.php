@@ -66,7 +66,7 @@ acf_add_local_field_group(array(
 			'append' => '',
 			'maxlength' => '',
 		),
-		/*array(
+	/*	array(
 			'key' => 'field_5ab0fb254a006',
 			'label' => 'Gallery Images',
 			'name' => 'mt_gallery_images',
