@@ -30,7 +30,7 @@ function dina_shortcode_food_menu_accordion( $atts ){
 									  'hierarchichal'=>2,
 									  'parent' => 0,
 									  'slug' => $categArray,
-									  'include' => '23,27,30,28'));
+									  'include' => '23,27,30,28,19'));
 	//print_r($categories);die;
 
 	foreach($categories as $category):
